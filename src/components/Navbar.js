@@ -9,6 +9,8 @@ const Nav = styled.nav`
   justify-content: center;
   align-items:center;
 
+  
+
 `
 
 const Navbar = () => {

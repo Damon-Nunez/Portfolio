@@ -15,8 +15,11 @@ const Ul = styled.ul`
     transition:0.3s ease-in;
     color:white;
     text-shadow:0px 0px 20px #fff,0px 0px 20px white;
+    z-index:5;
+
   }
   li:hover {
+    color:red;
     transform:scale(1.2)
   }
 
@@ -25,9 +28,9 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: black;
+    background-color: transparent;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => open ? 'translateX(30%)' : 'translateX(140%)'};
     top: 0;
     right: 0;
     height: 100vh;
@@ -35,8 +38,18 @@ const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     margin:0px;
-    z-index:10;
+    z-index:1;
+    li {
+      padding: 3px 30px;
+    font-size: 1.2rem;
+    font-family: Oswald;
+    border-radius: 35%;
+    transition: all 0.3s ease-in 0s;
+    color: white;
+    text-shadow: rgb(255 255 255) 0px 0px 20px, white 0px 0px 20px;
+    }
   }
+
 `;
 
 const RightNav = ({ open }) => {
@@ -44,10 +57,10 @@ const RightNav = ({ open }) => {
 
   return (
     <Ul open={open}>
-      <a href='/'><li>About Me</li></a>
-      <a href='/'><li>Skills</li></a>
-      <a href='/'><li>Projects</li></a>
-      <a href='/'><li>Contact</li></a>
+      <a href='#aboutMe'><li>About Me</li></a>
+      <a href='#skills'><li>Skills</li></a>
+      <a href='#projects'><li>Projects</li></a>
+      <a href='#contact'><li>Contact</li></a>
     </Ul>
   )
 }

@@ -1,10 +1,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker:400");
-
 .background {
-   height:2500px;
+   height:auto;
     background-image: linear-gradient(to right,purple,blue);
-
 }
 .aboutMe {
   display: flex;
@@ -27,6 +25,7 @@
     padding-bottom:30px;
     color:white;
     text-shadow:0px 0px 20px #fff,0px 0px 20px white;
+    z-index:-1;
 }
 .header {
     display: flex;
@@ -440,6 +439,8 @@
     text-shadow:0px 0px 20px #fff,0px 0px 20px white;
   }
   .projects {
+    height: 200px;
+    width: 200px;
     padding-top:70px;
     transition:0.1s ease-in;
     padding-bottom:50px;
@@ -534,6 +535,7 @@
     color:white;
     font-family: Permanent Marker;
     font-size:1.3rem;
+    z-index: 10;
   }
   .liveButton {
     border-radius:20%;
@@ -549,3 +551,56 @@
     justify-content: space-around;
     padding:10px;
   }
+  .contactHeader {
+    margin-top: 900px;
+    display: flex;
+    justify-content: center;
+    color:white;
+    text-shadow:0px 0px 20px #fff,0px 0px 20px white;
+    z-index:0;
+  }
+  .cardImageTwo {
+    border-radius: 35%;
+    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  }
+  .cardImageTwo:hover {
+    transform: scale(1.1);
+    filter:drop-shadow(0px 0px 50px pink);
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links {
+    color:white;
+    text-decoration: none;
+  }
+  .sectionNameFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    padding-top:20px;
+    color:white;
+    text-shadow:0px 0px 20px #fff,0px 0px 20px white;
+  }
+
+@media(max-width:500px){
+  .sectionNameFinal {
+    font-size: 1.2rem;
+    font-family: Permanent Marker;
+  }
+}
+@media(max-width:1000px) {
+  .projects {
+  height:1000px;
+  }
+  .contactHeader {
+    margin:60px;
+  }
+}

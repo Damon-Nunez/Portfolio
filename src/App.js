@@ -12,9 +12,10 @@ import BS from './images/BS.png'
 import GitHub from './images/GitHub.png'
 import Node from './images/Node.png'
 import TS from './images/TS.jpg'
-import dog from './images/latest.webp'
 import logo from './images/logo.png'
 import StarBucks from './images/Bucks.png'
+import Karuna from './images/Karuna.png'
+import LN from './images/LinkedIn.png'
 function App() {
   
 
@@ -28,13 +29,13 @@ function App() {
           <Fade top distance='20%' duration = {1500} >
       <Navbar/> 
     <h1 className="header"> Front End Developer!!💻</h1>
-    <h1 className="sectionName"> About Me!!</h1>
+    <h1 className="sectionName" id="aboutMe"> About Me!!</h1>
          <Row>
           <Col sm={12} md={12} lg={12}>
             <p className="aboutMe">As a front-end developer, I have a passion for coding and a keen eye for design. I possess a strong command of HTML, CSS, JavaScript, and React, and am able to leverage these technologies to create visually stunning and highly functional websites. With my expertise in front-end development, I am able to take designs and turn them into functional, responsive, and dynamic web experiences that engage users and meet their needs. My attention to detail, problem-solving skills, and dedication to staying up-to-date with the latest technologies in the industry enable me to create seamless and intuitive user experiences that delight users and drive business success.In addition to my technical proficiency, I bring a strong creative flair to my work as a front-end developer. I enjoy exploring new design ideas and pushing boundaries to create unique and innovative web experiences.</p>
           </Col>
          </Row>
-         <h1 className="sectionName"> Skills</h1>
+         <h1 className="sectionName" id="skills"> Skills</h1>
          <Row>
              <div className="cardContainer">
               <Card className="cardDesign">
@@ -80,9 +81,9 @@ function App() {
               <h1 className="cardCaption"> TypeScript</h1>
             </div>
          </Row>
-         <h1 className="sectionName"> Projects!!!</h1>
+         <h1 className="sectionName" id="projects"> Projects!!!</h1>
          <Row>
-          <Col sm={12} md={12} lg={4}>
+          <Col sm={12} md={4} lg={4}>
           <div className="projects">
            <Card className="projectCard">
             <Card.Img className='projectCardImage'src={logo} />
@@ -105,7 +106,7 @@ function App() {
                  </div>
                  <h1 className="projectCardCaption"> Where to find:</h1>
                  <div className="buttonZone">
-                  <button className="codeButton"> GitHub Code!</button>
+                 <button className="codeButton"> <a href="https://github.com/Damon-Nunez/DreamyCafe" className="links">GitHub</a></button>
                   <button className="liveButton"> Live! </button>
                  </div>
               </Card.Body>
@@ -140,7 +141,7 @@ function App() {
                  </div>
                  <h1 className="projectCardCaption"> Where to find:</h1>
                  <div className="buttonZone">
-                  <button className="codeButton"> GitHub Code!</button>
+                  <button className="codeButton"> <a href="https://github.com/Damon-Nunez/starbucksthedamonway" className="links">GitHub</a> </button> 
                   <button className="liveButton"> Live! </button>
                  </div>
               </Card.Body>
@@ -150,7 +151,7 @@ function App() {
           <Col sm={12} md={12} lg={4}>
           <div className="projects">
            <Card className="projectCard">
-            <Card.Img className='projectCardImage'src={logo} />
+            <Card.Img className='projectCardImage'src={Karuna} />
             <Card.Body>
               <Card.Title className="projectCardTitle">Karuna!</Card.Title>
                 <Card.Text className='projectCardCaption'>
@@ -170,7 +171,7 @@ function App() {
                 </div>
                 <h1 className="projectCardCaption"> Where to find:</h1>
                  <div className="buttonZone">
-                  <button className="codeButton"> GitHub Code!</button>
+                 <button className="codeButton"> <a href="https://github.com/yasirah-tech/Karuna" className="links">GitHub</a></button>
                   <button className="liveButton"> Live! </button>
                  </div>
                 
@@ -178,10 +179,24 @@ function App() {
            </Card>
           </div>
           </Col>
-         </Row>
-     </Fade>
+           </Row>
+           <h1 className="contactHeader">Contact Me!</h1>
+       <Row id='contact'>
+        <Col sm={12} md={12} lg={12}>
+       <div className="socials">
+              <Card className="cardDesign">
+                <a href="https://www.linkedin.com/in/damon-nunez-036497238/"><Card.Img className="cardImageTwo" src={LN}/></a>
+              </Card>
+            </div>
+             </Col>
+       </Row>
+      <Row>
+       <h1 className="sectionNameFinal"> Or email me at damon.j.nunez@gmail.com</h1>
+       </Row>
+     </Fade> 
+     
       </Container>
-      </section>
+      </section>   
       </div>
   );
 }
