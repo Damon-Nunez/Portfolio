@@ -32,13 +32,17 @@ const Ul = styled.ul`
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(30%)' : 'translateX(140%)'};
     top: 0;
-    right: 0;
+    right: 0px;
     height: 100vh;
-    width: 300px;
+    width:200px;
+    display: ${({ open }) => open ? 'flex' : 'none'};
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     margin:0px;
     z-index:1;
+    opacity:1;
+
+
     li {
       padding: 3px 30px;
     font-size: 1.2rem;

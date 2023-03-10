@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker:400");
 .background {
    height:auto;
+   width:auto;
     background-image: linear-gradient(to right,purple,blue);
 }
 .aboutMe {
