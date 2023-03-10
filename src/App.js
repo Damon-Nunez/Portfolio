@@ -107,7 +107,7 @@ function App() {
                  <h1 className="projectCardCaption"> Where to find:</h1>
                  <div className="buttonZone">
                  <button className="codeButton"> <a href="https://github.com/Damon-Nunez/DreamyCafe" className="links">GitHub</a></button>
-                  <button className="liveButton"> Live! </button>
+                  <button className="liveButton"><a href="https://bejewelled-rugelach-0fb05e.netlify.app/" className="links"> Live! </a></button>
                  </div>
               </Card.Body>
            </Card>
@@ -142,7 +142,7 @@ function App() {
                  <h1 className="projectCardCaption"> Where to find:</h1>
                  <div className="buttonZone">
                   <button className="codeButton"> <a href="https://github.com/Damon-Nunez/starbucksthedamonway" className="links">GitHub</a> </button> 
-                  <button className="liveButton"> Live! </button>
+                  <button className="liveButton"><a href="https://brilliant-biscotti-6fe10d.netlify.app/" className="links"> Live! </a></button>
                  </div>
               </Card.Body>
            </Card>
@@ -172,7 +172,7 @@ function App() {
                 <h1 className="projectCardCaption"> Where to find:</h1>
                  <div className="buttonZone">
                  <button className="codeButton"> <a href="https://github.com/yasirah-tech/Karuna" className="links">GitHub</a></button>
-                  <button className="liveButton"> Live! </button>
+                  <button className="liveButton"><a href="https://subtle-mermaid-a8378c.netlify.app/" className="links"> Live! </a></button>
                  </div>
                 
               </Card.Body>
