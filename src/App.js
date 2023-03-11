@@ -28,11 +28,11 @@ function App() {
     <Container>
           <Fade top distance='20%' duration = {1500} >
       <Navbar/> 
-    <h1 className="header"> Front End Developer!!💻</h1>
+    <h1 className="header"> Software Developer!!💻</h1>
     <h1 className="sectionName" id="aboutMe"> About Me!!</h1>
          <Row>
           <Col sm={12} md={12} lg={12}>
-            <p className="aboutMe">As a front-end developer, I have a passion for coding and a keen eye for design. I possess a strong command of HTML, CSS, JavaScript, and React, and am able to leverage these technologies to create visually stunning and highly functional websites. With my expertise in front-end development, I am able to take designs and turn them into functional, responsive, and dynamic web experiences that engage users and meet their needs. My attention to detail, problem-solving skills, and dedication to staying up-to-date with the latest technologies in the industry enable me to create seamless and intuitive user experiences that delight users and drive business success.In addition to my technical proficiency, I bring a strong creative flair to my work as a front-end developer. I enjoy exploring new design ideas and pushing boundaries to create unique and innovative web experiences.</p>
+            <p className="aboutMe">As a software developer, I have a passion for coding and a keen eye for design. I possess a strong command of HTML, CSS, JavaScript, and React, and am able to leverage these technologies to create visually stunning and highly functional websites.I am able to take designs and turn them into functional, responsive, and dynamic web experiences that engage users and meet their needs. My attention to detail, problem-solving skills, and dedication to staying up-to-date with the latest technologies in the industry enable me to create seamless and intuitive user experiences that delight users and drive business success.In addition to my technical proficiency, I bring a strong creative flair to my work for front-end. I enjoy exploring new design ideas and pushing boundaries to create unique and innovative web experiences.</p>
           </Col>
          </Row>
          <h1 className="sectionName" id="skills"> Skills</h1>
